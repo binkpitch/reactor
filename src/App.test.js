@@ -1,3 +1,6 @@
+// Tell Standard JS that 'it' is a global variable created by Jest
+/* eslint-env jest */
+
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'

@@ -1,19 +1,19 @@
 import React, { Component } from 'react'
-// import atom from './App_logo.svg'
-import './App.css'
-
-import TodoList from './containers/todoList'
+// required by Material UI for onTouchTap
+// http://stackoverflow.com/a/34015469/988941
+import injectTapEventPlugin from 'react-tap-event-plugin'
+import TodoListPage from './pages/todoListPage'
 
 class App extends Component {
+  constructor (props) {
+    super(props)
+    injectTapEventPlugin()
+  }
+
   render () {
     return (
-      <div className='Container'>
-        {/* <img className='Logo' src={atom} alt={'atom'} />
-        <div className='Text-wrapper'>
-          <h1 className='Text'>REACTOR</h1>
-          <h1 className='Text2'>React Boilerpate</h1>
-        </div> */}
-        <TodoList />
+      <div>
+        <TodoListPage />
       </div>
     )
   }

@@ -1,25 +1,25 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo, removeTodo } from '../actions/todoListActions.js'
-import List from '../components/list'
-import AddInputButton from '../components/addInputButton'
+import ListView from '../components/listView'
+import AddTodo from '../components/addTodo'
 
 const TodoList = (props) => {
-  const onChange = (text) => {
-    props.addTodo(text)
+  const handleSubmit = (value) => {
+    props.addTodo(value.todo)
   }
 
   return (
-    <div>
-      <AddInputButton onChange={onChange} />
+    <div style={props.style}>
+      <AddTodo onSubmit={handleSubmit} />
       <h2>Todo</h2>
-      <List dataSource={props.dataSource} remove={props.removeTodo} />
+      <ListView dataSource={props.dataSource} remove={props.removeTodo} />
     </div>
   )
 }
 
 // recieve store's state as prop
-const mapStateToProps = (state, prop) => {
+const mapStateToProps = (state) => {
   return {
     dataSource: state.todoList.list
   }
