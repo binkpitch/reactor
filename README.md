@@ -1,4 +1,4 @@
-### An React boilerplate with Redux.
+### A React boilerplate with Redux.
 
 Install with ```git clone https://github.com/binkpitch/reactor.git && cd reactor && rm -rf .git && yarn install```
 
