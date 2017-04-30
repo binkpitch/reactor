@@ -2,16 +2,16 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo, removeTodo } from '../actions/todoListActions.js'
 import ListView from '../components/listView'
-import AddTodo from '../components/addTodo'
+import AddField from '../components/addField'
 
 const TodoList = (props) => {
-  const handleSubmit = (value) => {
-    props.addTodo(value.todo)
+  const handleSubmit = (event) => {
+    props.addTodo(event.text)
   }
 
   return (
     <div style={props.style}>
-      <AddTodo onSubmit={handleSubmit} />
+      <AddField formName='todo' onSubmit={handleSubmit} />
       <h2>Todo</h2>
       <ListView dataSource={props.dataSource} remove={props.removeTodo} />
     </div>
