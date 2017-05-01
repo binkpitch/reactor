@@ -1,6 +1,6 @@
 {
   "name": "reactor",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "dependencies": {
     "material-ui": "^0.17.4",
@@ -9,6 +9,7 @@
     "react-dom": "^15.5.4",
     "react-jss": "^6.1.1",
     "react-redux": "^5.0.4",
+    "react-router-redux": "next",
     "react-tap-event-plugin": "^2.0.1",
     "redux": "^3.6.0",
     "redux-form": "^6.6.3",

@@ -1,5 +1,7 @@
 body {
-  margin: 0;
-  padding: 0;
+  /*remove user agent stylesheet which create 8px margin*/
+  padding:0;
+  margin:0;
+  /*use Roboto as main font*/
   font-family: 'Roboto', sans-serif;
 }

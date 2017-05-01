@@ -11,11 +11,17 @@ import reduxImmutableStateInvariant from 'redux-immutable-state-invariant'
 // "/logOnlyInProduction" disable extension in production
 import { composeWithDevTools } from 'redux-devtools-extension/logOnlyInProduction'
 
+// for react-router-redux
+import createHistory from 'history/createBrowserHistory'
+import { routerMiddleware } from 'react-router-redux'
+
+export const history = createHistory()
+
 const middleware = process.env.NODE_ENV !== 'production'
   // add middlewares to run on development
-  ? [reduxImmutableStateInvariant()]
+  ? [reduxImmutableStateInvariant(), routerMiddleware(history)]
   // add middlewares to run on production
-  : []
+  : [routerMiddleware(history)]
 
 // create store that contains all reducers and middlewares
 const store = createStore(
