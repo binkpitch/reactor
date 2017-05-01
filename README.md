@@ -18,5 +18,7 @@ To debug install chrome extension, [Redux DevTools](https://chrome.google.com/we
 
 6. **react-jss**: Activate inline CSS in any components using ```injectSheet(styles)(component)```
 
+7. **react-router-redux**: Dispatch action for navigation and keep redux state sync with router. 
+
 
 > This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
