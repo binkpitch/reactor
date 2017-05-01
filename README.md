@@ -16,7 +16,7 @@ To debug install chrome extension, [Redux DevTools](https://chrome.google.com/we
 
 5. **redux-form && redux-form-material-ui**: Auto-dispatch action to auto-created reducer (and many more) for form components with material-ui supports. *Suggestion*, use ```import { ComponentName } from 'redux-form-material-ui'``` if [```redux-form-material-ui```](https://github.com/erikras/redux-form-material-ui)'s component is available, this allow easy integration with ```redux-form```. 
 
-6. **react-jss**: Activate inline CSS in any components using ```injectSheet(styles)(component)```
+6. **react-jss**: Activate inline CSS in any components using ```injectSheet(styles)(component)```. It also come with ```jss-preset-default``` which add functions like vendor prefixer, css with camel case, and [many more](https://github.com/cssinjs/jss-preset-default)
 
 7. **react-router-redux**: Dispatch action for navigation and keep redux state sync with router. 
 
