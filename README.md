@@ -18,7 +18,11 @@ To debug install chrome extension, [Redux DevTools](https://chrome.google.com/we
 
 6. **react-jss**: Activate inline CSS in any components using ```injectSheet(styles)(component)```. It also come with ```jss-preset-default``` which add functions like vendor prefixer, css with camel case, and [many more](https://github.com/cssinjs/jss-preset-default)
 
-7. **react-router-redux**: Dispatch action for navigation and keep redux state sync with router. 
+7. **react-router-redux**: Dispatch action for navigation and keep redux state sync with router.
+
+8. **redux-saga**: Middleware for redux that provides [side effects](http://redux.js.org/docs/faq/Actions.html#actions-side-effects).
+
+9. **axios**: A promise-based HTTP client use for making server requests.
 
 
 > This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
