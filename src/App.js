@@ -8,7 +8,10 @@ import injectTapEventPlugin from 'react-tap-event-plugin'
 // for more actions, see https://github.com/ReactTraining/react-router/blob/master/packages/react-router-redux/modules/actions.js
 import { Route } from 'react-router'
 import { ConnectedRouter } from 'react-router-redux'
-import { history } from './store.js'
+import { history, sagaMiddleware } from './store.js'
+
+// get every sagas
+import rootSagas from './sagas'
 
 import AppBar from './components/appBar'
 import Drawer from './containers/drawer'
@@ -26,6 +29,7 @@ class App extends Component {
   constructor (props) {
     super(props)
     injectTapEventPlugin()
+    sagaMiddleware.run(rootSagas)
   }
 
   render () {

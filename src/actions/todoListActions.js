@@ -13,3 +13,23 @@ export const removeTodo = (id) => {
     id
   }
 }
+
+export const fetchTodoRequest = () => {
+  return {
+    type: 'TODOLIST_FETCH_TODO_REQUEST'
+  }
+}
+
+export const fetchTodoResponse = (payload) => {
+  return {
+    type: 'TODOLIST_FETCH_TODO_RESPONSE',
+    payload
+  }
+}
+
+export const fetchTodoError = (error) => {
+  return {
+    type: 'TODOLIST_FETCH_TODO_RESPONSE',
+    error
+  }
+}

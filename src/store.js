@@ -15,13 +15,16 @@ import { composeWithDevTools } from 'redux-devtools-extension/logOnlyInProductio
 import createHistory from 'history/createBrowserHistory'
 import { routerMiddleware } from 'react-router-redux'
 
+import createSagaMiddleware from 'redux-saga'
+
 export const history = createHistory()
+export const sagaMiddleware = createSagaMiddleware()
 
 const middleware = process.env.NODE_ENV !== 'production'
   // add middlewares to run on development
-  ? [reduxImmutableStateInvariant(), routerMiddleware(history)]
+  ? [reduxImmutableStateInvariant(), routerMiddleware(history), sagaMiddleware]
   // add middlewares to run on production
-  : [routerMiddleware(history)]
+  : [routerMiddleware(history), sagaMiddleware]
 
 // create store that contains all reducers and middlewares
 const store = createStore(

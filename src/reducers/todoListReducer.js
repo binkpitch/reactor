@@ -1,9 +1,7 @@
 // set store's initial state
 const initialState = {
   list: [
-    {id: 1, text: 'todo1'},
-    {id: 2, text: 'todo2'},
-    {id: 3, text: 'todo3'}
+    {id: 1, text: 'Todo from inital reducer state.'}
   ]
 }
 
