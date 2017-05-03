@@ -18,8 +18,10 @@
     "redux-saga": "^0.15.0"
   },
   "devDependencies": {
+    "enzyme": "^2.8.2",
     "pre-commit": "^1.2.2",
     "react-scripts": "0.9.5",
+    "react-test-renderer": "^15.5.4",
     "redux-devtools-extension": "^2.13.0",
     "redux-immutable-state-invariant": "^2.0.0",
     "standard": "^10.0.2"

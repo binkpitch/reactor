@@ -1,11 +1,14 @@
-// Tell Standard JS that 'it' is a global variable created by Jest
+// Tell Standard JS that there is a global variable created by Jest so
+// e.g. describe, it, expect, ...
 /* eslint-env jest */
 
 import React from 'react'
-import ReactDOM from 'react-dom'
 import App from './App'
+import { shallow } from 'enzyme'
 
-it('renders without crashing', () => {
-  const div = document.createElement('div')
-  ReactDOM.render(<App />, div)
+describe('<App />', () => {
+  it('renders without exploding', () => {
+    const wrapper = shallow(<App />)
+    expect(wrapper.length).toEqual(1)
+  })
 })
