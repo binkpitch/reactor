@@ -10,7 +10,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    pushHomePage: () => dispatch(push('/'))
+    pushIntro: () => dispatch(push('/')),
+    pushTodo: () => dispatch(push('/todo'))
   }
 }
 

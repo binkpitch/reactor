@@ -5,8 +5,7 @@ import MenuItem from 'material-ui/MenuItem'
 const drawer = (props) => {
   return (
     <Drawer width='20%' docked>
-      <MenuItem checked={props.pathname === '/'} onTouchTap={() => props.pushIntro()} insetChildren>Intro</MenuItem>
-      <MenuItem checked={props.pathname === '/todo'} onTouchTap={() => props.pushTodo()} insetChildren>Todo</MenuItem>
+      <MenuItem checked={props.pathname === '/'} onTouchTap={() => props.pushHomePage()} insetChildren>Home Page</MenuItem>
     </Drawer>
   )
 }

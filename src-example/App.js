@@ -17,7 +17,8 @@ import AppBar from './components/appBar'
 import Drawer from './containers/drawer'
 
 // import your pages here
-import HomePage from './pages/homePage'
+import IntroPage from './pages/introPage'
+import TodoListPage from './pages/todoListPage'
 
 import injectSheet from 'react-jss'
 const styles = {
@@ -40,7 +41,8 @@ class App extends Component {
           {/* add margin left for drawer */}
           <div style={styles}>
             <Route path='/' component={AppBar} />
-            <Route exact path='/' component={HomePage} />
+            <Route exact path='/' component={IntroPage} />
+            <Route path='/todo' component={TodoListPage} />
           </div>
         </div>
       </ConnectedRouter>
