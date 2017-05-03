@@ -24,5 +24,6 @@ To debug install chrome extension, [Redux DevTools](https://chrome.google.com/we
 
 9. **axios**: A promise-based HTTP client use for making server requests.
 
+10. **jest && enzyme**: For react unit testing. Create file ```name.test.js``` and use ```yarn test``` to run all tests.
 
 > This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
