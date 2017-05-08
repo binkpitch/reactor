@@ -7,7 +7,7 @@ const styles = {
   alignItems: 'center'
 }
 
-const HomePage = () => {
+const IntroPage = () => {
   return (
     <div style={styles}>
       <h2>Reactor</h2>
@@ -15,4 +15,4 @@ const HomePage = () => {
   )
 }
 
-export default injectSheet(styles)(HomePage)
+export default injectSheet(styles)(IntroPage)

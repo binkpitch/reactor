@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.1",
-    "material-ui": "^0.17.4",
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
@@ -14,8 +13,9 @@
     "react-tap-event-plugin": "^2.0.1",
     "redux": "^3.6.0",
     "redux-form": "^6.6.3",
-    "redux-form-material-ui": "^4.2.0",
-    "redux-saga": "^0.15.0"
+    "redux-saga": "^0.15.0",
+    "semantic-ui-css": "^2.2.10",
+    "semantic-ui-react": "^0.68.2"
   },
   "devDependencies": {
     "enzyme": "^2.8.2",

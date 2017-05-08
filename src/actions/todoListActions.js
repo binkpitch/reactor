@@ -1,9 +1,11 @@
 // a function that create action a.k.a. Action Creator
 // this function return action.type and action.text to the reducer
-export const addTodo = (text) => {
+export const addTodo = (text, date, time) => {
   return {
     type: 'TODOLIST_ADD_TODO',
-    text
+    text,
+    date,
+    time
   }
 }
 

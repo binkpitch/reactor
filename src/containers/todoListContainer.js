@@ -1,23 +1,28 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo, removeTodo, fetchTodoRequest } from '../actions/todoListActions.js'
-import RaisedButton from 'material-ui/RaisedButton'
-import ListView from '../components/listView'
-import AddField from '../components/addField'
+import { Button } from 'semantic-ui-react'
+import List from '../components/listComponent'
+import TextArea from '../components/textAreaComponent'
 
 const TodoList = (props) => {
-  const handleSubmit = (event) => {
-    props.addTodo(event.text)
+  const handleAddTodo = (event) => {
+    event.preventDefault()
+    const date = new Date().toLocaleDateString()
+    const time = new Date().toLocaleTimeString()
+    props.todoForm.values
+    ? props.addTodo(props.todoForm.values.textArea, date, time)
+    : props.addTodo('')
   }
 
   return (
     <div style={props.style}>
-      <AddField formName='todo' onSubmit={handleSubmit} />
+      <TextArea formName='todo' onSubmit={handleAddTodo} />
       <h4>OR</h4>
-      <RaisedButton label='Fetch Todo using GET' onTouchTap={props.fetchTodo} />
+      <Button content='Fetch Todo using GET' onClick={props.fetchTodo} />
       <br />
       <h2>Todo</h2>
-      <ListView dataSource={props.dataSource} remove={props.removeTodo} />
+      <List dataSource={props.dataSource} removeItem={props.removeTodo} />
     </div>
   )
 }
@@ -25,7 +30,8 @@ const TodoList = (props) => {
 // recieve store's state as prop
 const mapStateToProps = (state) => {
   return {
-    dataSource: state.todoList.list
+    dataSource: state.todoList.list,
+    todoForm: state.form.todo
   }
 }
 
@@ -33,7 +39,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     // wrap action creators into dispatch
-    addTodo: (todo) => dispatch(addTodo(todo)),
+    addTodo: (text, date, time) => dispatch(addTodo(text, date, time)),
     removeTodo: (id) => dispatch(removeTodo(id)),
     fetchTodo: () => dispatch(fetchTodoRequest())
   }

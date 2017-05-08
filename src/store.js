@@ -17,14 +17,14 @@ import { routerMiddleware } from 'react-router-redux'
 
 import createSagaMiddleware from 'redux-saga'
 
-export const history = createHistory()
+export const routerHistory = createHistory()
 export const sagaMiddleware = createSagaMiddleware()
 
 const middleware = process.env.NODE_ENV !== 'production'
   // add middlewares to run on development
-  ? [reduxImmutableStateInvariant(), routerMiddleware(history), sagaMiddleware]
+  ? [reduxImmutableStateInvariant(), routerMiddleware(routerHistory), sagaMiddleware]
   // add middlewares to run on production
-  : [routerMiddleware(history), sagaMiddleware]
+  : [routerMiddleware(routerHistory), sagaMiddleware]
 
 // create store that contains all reducers and middlewares
 const store = createStore(
