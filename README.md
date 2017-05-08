@@ -1,6 +1,6 @@
 ### A React boilerplate with Redux.
 
-Install with ```git clone https://github.com/binkpitch/reactor.git your-project-name && cd your-project-name && rm -rf .git && yarn install```
+Install with ```git clone https://github.com/binkpitch/reactor.git your-project-name && cd your-project-name && rm -rf .git && [yarn](https://yarnpkg.com/en/docs/install) install```
 
 To debug install chrome extension, [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd).
 
