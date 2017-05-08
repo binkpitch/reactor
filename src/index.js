@@ -7,7 +7,6 @@ import { Provider } from 'react-redux'
 import 'semantic-ui-css/semantic.min.css'
 
 ReactDOM.render(
-  // Use Provider to provide store to all parts of the application
   <Provider store={store}>
     <App />
   </Provider>,
