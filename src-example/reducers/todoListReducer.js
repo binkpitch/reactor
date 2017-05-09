@@ -1,3 +1,5 @@
+import { actionTypes } from '../actions/todoListActions'
+
 // set store's initial state
 const initialState = {
   list: [
@@ -8,8 +10,10 @@ const initialState = {
 // create a reducer accepting previous state and action
 // then return new states (immutable) to store
 const todoListReducer = (state = initialState, action) => {
+  const { TODOLIST_ADD_TODO, TODOLIST_REMOVE_TODO } = actionTypes
+
   switch (action.type) {
-    case 'TODOLIST_ADD_TODO': {
+    case TODOLIST_ADD_TODO: {
       const lastestItem = state.list.length > 0
         ? state.list.reduce((prev, next) => next.id > prev.id ? next : prev)
         : { id: 0 }
@@ -17,11 +21,13 @@ const todoListReducer = (state = initialState, action) => {
       const newTodoList = state.list.concat({ id: newId, text: action.text, date: action.date, time: action.time })
       return { ...state, list: newTodoList }
     }
-    case 'TODOLIST_REMOVE_TODO': {
+
+    case TODOLIST_REMOVE_TODO: {
       const newTodoList = state.list.filter((item) => item.id !== action.id)
       // use spread operator to prevent mutable of state
       return { ...state, list: newTodoList }
     }
+
     default:
       return state
   }
