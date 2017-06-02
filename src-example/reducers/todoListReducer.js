@@ -14,6 +14,14 @@ const todoListReducer = (state = initialState, action) => {
 
   switch (action.type) {
     case TODOLIST_ADD_TODO: {
+      // test for store mutation error
+      // const lastestItem = state.list.length > 0
+      //   ? state.list.reduce((prev, next) => next.id > prev.id ? next : prev)
+      //   : { id: 0 }
+      // const newId = lastestItem.id + 1
+      // state.list.push({ id: newId, text: action.text, date: action.date, time: action.time })
+      // return {}
+
       const lastestItem = state.list.length > 0
         ? state.list.reduce((prev, next) => next.id > prev.id ? next : prev)
         : { id: 0 }
