@@ -1,10 +1,12 @@
 import React from 'react'
-import { Header, Icon, Message, Label } from 'semantic-ui-react'
+import { Header, Icon, Message, Segment } from 'semantic-ui-react'
 import injectSheet from 'react-jss'
 
 const styles = {
   container: {
-    margin: 64
+    marginTop: 64,
+    marginLeft: 64,
+    marginRight: 64
   }
 }
 
@@ -26,11 +28,11 @@ const HomePage = () => {
         <Message.Header>To see redux in action</Message.Header>
         <p>Install <a href='https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en'>Redux DevTools</a> (Chrome Extension)</p>
       </Message>
-      <Label attached='bottom'>
+      <Segment style={{ alignSelf: 'flex-end' }} attached='bottom'>
         <div style={{textAlign: 'center', marginTop: 8, marginBottom: 8}}>
           This project was bootstrapped with <a href='https://github.com/facebookincubator/create-react-app'>Create React App</a>
         </div>
-      </Label>
+      </Segment>
     </div>
   )
 }
