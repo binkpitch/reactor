@@ -3,7 +3,7 @@ import { actionTypes } from '../actions/todoListActions'
 // set store's initial state
 const initialState = {
   list: [
-    {id: 1, text: 'Todo from inital reducer state.', date: '5/8/2016', time: '12:02:12 PM'}
+    {id: 1, text: 'Todo from initial reducer state.', date: '5/8/2016', time: '12:02:12 PM'}
   ]
 }
 
