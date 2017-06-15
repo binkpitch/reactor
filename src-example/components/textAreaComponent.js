@@ -25,7 +25,7 @@ const mapStateToProps = (state, props) => {
 // use dynamic form name (props.formName) in redux form
 export default compose(
     connect(mapStateToProps),
-    reduxForm()
+    reduxForm({})
 )(textArea)
 
 textArea.protoTypes = {
