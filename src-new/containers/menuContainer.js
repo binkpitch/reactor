@@ -9,10 +9,6 @@ const menu = (props) => {
       name: 'Home Page',
       isActive: props.location.pathname === '/',
       onClick: props.pushHomePage
-    }, {
-      name: 'Todo List',
-      isActive: props.location.pathname === '/todolist',
-      onClick: props.pushTodoList
     }
   ]
 
@@ -23,8 +19,7 @@ const menu = (props) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    pushHomePage: () => dispatch(push('/')),
-    pushTodoList: () => dispatch(push('/todolist'))
+    pushHomePage: () => dispatch(push('/'))
   }
 }
 
