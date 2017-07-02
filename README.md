@@ -3,7 +3,7 @@
 Install with ```git clone https://github.com/binkpitch/reactor.git your-project-name && cd your-project-name && rm -rf .git && yarn install```. 
 > To install ```yarn```, go to https://yarnpkg.com/en/docs/install.
 
-Try at https://binkpitch.me.
+Try at https://binkpitch.github.io/reactor.
 
 To debug install chrome extension, [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd).
 
