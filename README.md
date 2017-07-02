@@ -7,7 +7,7 @@ Try at https://binkpitch.github.io/reactor.
 
 To debug install chrome extension, [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd).
 
-To work with empty boilerplate, rename ```src-new``` to ```src```.
+To work with an empty boilerplate, rename ```src-new``` to ```src```.
 
 **Libraries**
 
