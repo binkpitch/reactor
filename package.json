@@ -15,13 +15,13 @@
     "redux-form": "^6.8.0",
     "redux-saga": "^0.15.0",
     "semantic-ui-css": "^2.2.10",
-    "semantic-ui-react": "^0.68.5"
+    "semantic-ui-react": "^0.70.0"
   },
   "devDependencies": {
     "enzyme": "^2.8.2",
     "gh-pages": "^1.0.0",
     "pre-commit": "^1.2.2",
-    "react-scripts": "1.0.7",
+    "react-scripts": "1.0.10",
     "react-test-renderer": "^15.5.4",
     "redux-devtools-extension": "^2.13.2",
     "redux-immutable-state-invariant": "^2.0.0",
