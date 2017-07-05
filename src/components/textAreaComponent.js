@@ -10,8 +10,8 @@ const renderFormInput = (field) => <Form.Input {...field.input} placeholder={fie
 const textArea = (props) => {
   return (
     <Form onSubmit={props.onSubmit}>
-      <Field name='textArea' component={renderFormInput} placeholder='Type me!' />
-      <Form.Button content='ADD' floated={'right'} />
+      <Field name='textArea' component={renderFormInput} placeholder={props.placeholder || 'Type me!'} />
+      <Form.Button content={props.content || 'Submit'} floated={props.float || 'right'} />
     </Form>
   )
 }
@@ -29,5 +29,9 @@ export default compose(
 )(textArea)
 
 textArea.protoTypes = {
-  onSubmit: PropTypes.func.isRequired
+  onSubmit: PropTypes.func.isRequired,
+  formName: PropTypes.string.isRequired,
+  content: PropTypes.string,
+  float: PropTypes.string,
+  placeholder: PropTypes.string
 }

@@ -10,7 +10,7 @@ const initialState = {
 // create a reducer accepting previous state and action
 // then return new states (immutable) to store
 const todoListReducer = (state = initialState, action) => {
-  const { TODOLIST_ADD_TODO, TODOLIST_REMOVE_TODO } = actionTypes
+  const { TODOLIST_ADD_TODO, TODOLIST_REMOVE_TODO, TODOLIST_EDIT_TODO } = actionTypes
 
   switch (action.type) {
     case TODOLIST_ADD_TODO: {
@@ -34,6 +34,15 @@ const todoListReducer = (state = initialState, action) => {
       const newTodoList = state.list.filter((item) => item.id !== action.id)
       // use spread operator to prevent mutable of state
       return { ...state, list: newTodoList }
+    }
+
+    case TODOLIST_EDIT_TODO: {
+      const newTodoList = state.list.map(item =>
+        item.id === action.id
+        ? {...item, text: action.text}
+        : item
+      )
+      return {...state, list: newTodoList}
     }
 
     default:

@@ -5,7 +5,8 @@ export const actionTypes = {
   TODOLIST_REMOVE_TODO: 'TODOLIST_REMOVE_TODO',
   TODOLIST_FETCH_TODO_REQUESTED: 'TODOLIST_FETCH_TODO_REQUESTED',
   TODOLIST_FETCH_TODO_SUCCEEDED: 'TODOLIST_FETCH_TODO_SUCCEEDED',
-  TODOLIST_FETCH_TODO_FAILED: 'TODOLIST_FETCH_TODO_FAILED'
+  TODOLIST_FETCH_TODO_FAILED: 'TODOLIST_FETCH_TODO_FAILED',
+  TODOLIST_EDIT_TODO: 'TODOLIST_EDIT_TODO'
 }
 
 // a function that create action a.k.a. Action Creator
@@ -43,5 +44,13 @@ export const fetchTodoError = (error) => {
   return {
     type: actionTypes.TODOLIST_FETCH_TODO_FAILED,
     error
+  }
+}
+
+export const editTodo = (id, text) => {
+  return {
+    type: actionTypes.TODOLIST_EDIT_TODO,
+    id,
+    text
   }
 }
