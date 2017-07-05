@@ -10,7 +10,6 @@ const styles = {
 }
 
 const noMatchPage = (props) => {
-  console.log('props', props)
   return (
     <div style={styles.mainContainer}>
       <Message negative>

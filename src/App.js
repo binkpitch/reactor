@@ -26,10 +26,10 @@ class App extends Component {
     return (
       <ConnectedRouter history={routerHistory}>
         <div>
-          <Route path='/' component={Menu} />
+          <Route path={process.env.PUBLIC_URL + '/'} component={Menu} />
           <Switch>
-            <Route exact path='/' component={HomePage} />
-            <Route path='/todolist' component={TodoListPage} />
+            <Route exact path={process.env.PUBLIC_URL + '/'} component={HomePage} />
+            <Route path={process.env.PUBLIC_URL + '/todolist'} component={TodoListPage} />
             <Route component={NoMatchPage} />
           </Switch>
         </div>
