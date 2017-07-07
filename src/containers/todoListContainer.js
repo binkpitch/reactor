@@ -23,7 +23,7 @@ const TodoList = (props) => {
     <div style={props.style}>
       <TextArea formName='addTodo' onSubmit={handleAddTodo} content={'ADD'} />
       <h4>OR</h4>
-      <Button content='Fetch Todo using GET' onClick={props.fetchTodo} />
+      <Button content='Fetch Todo using GET' onClick={props.fetchTodoRequest} />
       <br />
       <h2>Todo</h2>
       <List dataSource={props.dataSource} removeItem={props.removeTodo} editItem={handleEditTodo} />
@@ -41,14 +41,22 @@ const mapStateToProps = (state) => {
 }
 
 // receive dispatch (contain action creators) as prop
-const mapDispatchToProps = (dispatch) => {
-  return {
-    // wrap action creators into dispatch
-    addTodo: (text, date, time) => dispatch(addTodo(text, date, time)),
-    removeTodo: (id) => dispatch(removeTodo(id)),
-    fetchTodo: () => dispatch(fetchTodoRequest()),
-    editTodo: (id, text) => dispatch(editTodo(id, text))
-  }
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     // wrap action creators into dispatch
+//     addTodo: (text, date, time) => dispatch(addTodo(text, date, time)),
+//     removeTodo: (id) => dispatch(removeTodo(id)),
+//     fetchTodoRequest: () => dispatch(fetchTodoRequest()),
+//     editTodo: (id, text) => dispatch(editTodo(id, text))
+//   }
+// }
+
+// this is equivalent to to the above mapDispatchToProps
+const mapDispatchToProps = {
+  addTodo,
+  removeTodo,
+  fetchTodoRequest,
+  editTodo
 }
 
 // connect component to store using higher order components
