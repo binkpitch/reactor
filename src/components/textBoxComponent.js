@@ -7,10 +7,10 @@ import { Form } from 'semantic-ui-react'
 
 const renderFormInput = (field) => <Form.Input {...field.input} placeholder={field.placeholder} />
 
-const textArea = (props) => {
+const textBox = (props) => {
   return (
     <Form onSubmit={props.onSubmit}>
-      <Field name='textArea' component={renderFormInput} placeholder={props.placeholder || 'Type me!'} />
+      <Field name='textBox' component={renderFormInput} placeholder={props.placeholder || 'Type me!'} />
       <Form.Button content={props.content || 'Submit'} floated={props.float || 'right'} />
     </Form>
   )
@@ -26,9 +26,9 @@ const mapStateToProps = (state, props) => {
 export default compose(
     connect(mapStateToProps),
     reduxForm({})
-)(textArea)
+)(textBox)
 
-textArea.protoTypes = {
+textBox.protoTypes = {
   onSubmit: PropTypes.func.isRequired,
   formName: PropTypes.string.isRequired,
   content: PropTypes.string,

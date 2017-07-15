@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { addTodo, removeTodo, fetchTodoRequest, editTodo } from '../actions/todoListActions.js'
 import { Button } from 'semantic-ui-react'
 import List from '../components/listComponent'
-import TextArea from '../components/textAreaComponent'
+import TextBox from '../components/textBoxComponent'
 
 const TodoList = (props) => {
   const handleAddTodo = (event) => {
@@ -11,7 +11,7 @@ const TodoList = (props) => {
     const date = new Date().toLocaleDateString()
     const time = new Date().toLocaleTimeString()
     props.addTodoForm.values
-    ? props.addTodo(props.addTodoForm.values.textArea, date, time)
+    ? props.addTodo(props.addTodoForm.values.textBox, date, time)
     : props.addTodo('')
   }
 
@@ -21,7 +21,7 @@ const TodoList = (props) => {
 
   return (
     <div style={props.style}>
-      <TextArea formName='addTodo' onSubmit={handleAddTodo} content={'ADD'} />
+      <TextBox formName='addTodo' onSubmit={handleAddTodo} content={'ADD'} />
       <h4>OR</h4>
       <Button content='Fetch Todo using GET' onClick={props.fetchTodoRequest} />
       <br />

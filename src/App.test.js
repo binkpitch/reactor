@@ -6,7 +6,7 @@ import React from 'react'
 import App from './App'
 import { shallow } from 'enzyme'
 
-describe('<App />', () => {
+describe('App', () => {
   it('renders without exploding', () => {
     const wrapper = shallow(<App />)
     expect(wrapper.length).toEqual(1)
