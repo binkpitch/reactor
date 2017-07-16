@@ -19,7 +19,7 @@ To work with an empty boilerplate, rename ```src-new``` to ```src```.
 
 4. **semantic-ui-react**: An UI framework based on ```semantic-ui``` with modification to supports React.
 
-5. **redux-form**: Auto-dispatch action to auto-created reducer (and many more) for form components with material-ui supports. See ```textAreaComponent.js``` for working example with ```semantic-ui-react```.
+5. **redux-form**: Auto-dispatch action to auto-created reducer (and many more) for form components. See ```textAreaComponent.js``` for working example with ```semantic-ui-react```.
 
 6. **react-jss**: Activate inline CSS in any components using ```injectSheet(styles)(component)```. It also come with ```jss-preset-default``` which add functions like vendor prefixer, css with camel case, and [many more](https://github.com/cssinjs/jss-preset-default)
 
