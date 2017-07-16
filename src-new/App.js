@@ -1,15 +1,10 @@
 import React, { Component } from 'react'
-
-import { Route, Switch } from 'react-router'
-import { ConnectedRouter } from 'react-router-redux'
-import { routerHistory, sagaMiddleware } from './store.js'
+import store, { sagaMiddleware } from './store'
+import { Provider } from 'react-redux'
 
 import rootSagas from './sagas'
 
-import Menu from './containers/menuContainer'
-
-import HomePage from './pages/homePage'
-import NoMatchPage from './pages/noMatchPage'
+import Router from './router'
 
 class App extends Component {
   constructor (props) {
@@ -19,15 +14,9 @@ class App extends Component {
 
   render () {
     return (
-      <ConnectedRouter history={routerHistory}>
-        <div>
-          <Route path='/' component={Menu} />
-          <Switch>
-            <Route exact path='/' component={HomePage} />
-            <Route component={NoMatchPage} />
-          </Switch>
-        </div>
-      </ConnectedRouter>
+      <Provider store={store}>
+        <Router />
+      </Provider>
     )
   }
 }
