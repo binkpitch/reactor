@@ -8,14 +8,14 @@
     "prop-types": "^15.5.8",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-jss": "^7.0.1",
+    "react-jss": "^7.0.2",
     "react-redux": "^5.0.4",
     "react-router-redux": "next",
     "redux": "^3.7.2",
-    "redux-form": "^7.0.0",
-    "redux-saga": "^0.15.0",
+    "redux-form": "^7.0.3",
+    "redux-saga": "^0.15.6",
     "semantic-ui-css": "^2.2.11",
-    "semantic-ui-react": "^0.71.0"
+    "semantic-ui-react": "^0.71.3"
   },
   "devDependencies": {
     "enzyme": "^2.8.2",
