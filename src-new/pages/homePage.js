@@ -1,5 +1,4 @@
 import React from 'react'
-import injectSheet from 'react-jss'
 
 const styles = {
   display: 'flex',
@@ -15,4 +14,4 @@ const IntroPage = () => {
   )
 }
 
-export default injectSheet(styles)(IntroPage)
+export default IntroPage
