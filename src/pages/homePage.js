@@ -1,6 +1,5 @@
 import React from 'react'
 import { Header, Icon, Message, Segment } from 'semantic-ui-react'
-import injectSheet from 'react-jss'
 
 const styles = {
   container: {
@@ -37,4 +36,4 @@ const HomePage = () => {
   )
 }
 
-export default injectSheet(styles)(HomePage)
+export default HomePage

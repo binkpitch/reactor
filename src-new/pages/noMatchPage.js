@@ -1,6 +1,5 @@
 import React from 'react'
 import { Message } from 'semantic-ui-react'
-import injectSheet from 'react-jss'
 
 const styles = {
   mainContainer: {
@@ -20,4 +19,4 @@ const noMatchPage = (props) => {
   )
 }
 
-export default injectSheet(styles)(noMatchPage)
+export default noMatchPage

@@ -1,7 +1,5 @@
 import React from 'react'
 import TodoList from '../containers/todoListContainer'
-// Support for inline css
-import injectSheet from 'react-jss'
 import styles from './todoListPageStyle'
 
 const TodoListPage = () => {
@@ -10,4 +8,4 @@ const TodoListPage = () => {
   )
 }
 
-export default injectSheet(styles)(TodoListPage)
+export default TodoListPage
