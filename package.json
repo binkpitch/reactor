@@ -13,14 +13,14 @@
     "redux-form": "^7.0.3",
     "redux-saga": "^0.15.6",
     "semantic-ui-css": "^2.2.12",
-    "semantic-ui-react": "^0.71.4"
+    "semantic-ui-react": "^0.74.2"
   },
   "devDependencies": {
-    "enzyme": "^2.8.2",
+    "enzyme": "^3.1.0",
     "gh-pages": "^1.0.0",
     "pre-commit": "^1.2.2",
     "react-scripts": "^1.0.11",
-    "react-test-renderer": "^15.5.4",
+    "react-test-renderer": "^16.0.0",
     "redux-devtools-extension": "^2.13.2",
     "redux-immutable-state-invariant": "^2.0.0",
     "standard": "^10.0.3"
