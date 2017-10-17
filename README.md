@@ -25,8 +25,10 @@ To work with an empty boilerplate, rename ```src-new``` to ```src```.
 
 7. **redux-saga**: Middleware for redux that provides [side effects](http://redux.js.org/docs/faq/Actions.html#actions-side-effects).
 
-8. **axios**: A promise-based HTTP client use for making server requests.
+8. **redux-thunk**: Another middleware for redux.
 
-9. **jest && enzyme**: For react unit testing. Create file ```name.test.js``` and use ```yarn test``` to run all tests.
+9. **axios**: A promise-based HTTP client use for making server requests.
+
+10. **jest && enzyme**: For react unit testing. Create file ```name.test.js``` and use ```yarn test``` to run all tests.
 
 > This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
