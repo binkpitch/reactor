@@ -1,0 +1,476 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components List 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <div
+      className="ui divided list"
+      role="list"
+    >
+      <div
+        className="item"
+        data-value={undefined}
+        onClick={[Function]}
+        role="listitem"
+      >
+        <div
+          className="left floated content"
+        >
+          <div
+            className="header"
+          >
+            Todo from initial reducer state.
+          </div>
+          <div
+            className="description"
+          >
+            5/8/2016
+             - 
+            12:02:12 PM
+          </div>
+        </div>
+        <div
+          className="right floated content"
+        >
+          <button
+            className="ui icon button"
+            disabled={undefined}
+            onClick={[Function]}
+            role="button"
+            tabIndex={undefined}
+          >
+            <i
+              aria-hidden="true"
+              className="delete icon"
+            />
+          </button>
+        </div>
+        <div
+          className="right floated content"
+        >
+          <button
+            className="ui icon button"
+            disabled={undefined}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            role="button"
+            tabIndex={undefined}
+          >
+            <i
+              aria-hidden="true"
+              className="edit icon"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components Menu 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <div
+      className="ui menu"
+    >
+      <div
+        className="header item"
+        onClick={[Function]}
+      >
+        reactor
+      </div>
+      <a
+        className="active item"
+        onClick={[Function]}
+      >
+        Home Page
+      </a>
+      <a
+        className="item"
+        onClick={[Function]}
+      >
+        Todo List
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components Text Box 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "overflow": "auto",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <form
+      action={undefined}
+      className="ui form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="field"
+      >
+        <div
+          className="ui input"
+          content={undefined}
+        >
+          <input
+            disabled={undefined}
+            name="textBox"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            placeholder="Type me!"
+            required={undefined}
+            tabIndex={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="field"
+      >
+        <button
+          className="ui right floated button"
+          disabled={undefined}
+          onClick={[Function]}
+          required={undefined}
+          role="button"
+          tabIndex={undefined}
+          type={undefined}
+        >
+          ADD
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Pages Home 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": 64,
+      "marginRight": 64,
+      "marginTop": 64,
+    }
+  }
+>
+  <h2
+    className="ui icon center aligned header"
+  >
+    <i
+      aria-hidden="true"
+      className="cubes icon"
+      style={
+        Object {
+          "marginBottom": 16,
+        }
+      }
+    />
+    A React boilerplate with Redux
+    <div
+      className="sub header"
+    >
+      <a
+        href="https://github.com/binkpitch/reactor"
+      >
+        https://github.com/binkpitch/reactor
+      </a>
+    </div>
+  </h2>
+  <div
+    className="ui positive message"
+    style={
+      Object {
+        "marginTop": 56,
+      }
+    }
+  >
+    <div
+      className="header"
+    >
+      To install
+    </div>
+    <p>
+      Run "
+      <b>
+        git clone https://github.com/binkpitch/reactor.git your-project-name && cd your-project-name && rm -rf .git && yarn install
+      </b>
+      "
+    </p>
+  </div>
+  <div
+    className="ui info message"
+  >
+    <div
+      className="header"
+    >
+      To see redux in action
+    </div>
+    <p>
+      Install 
+      <a
+        href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en"
+      >
+        Redux DevTools
+      </a>
+       (Chrome Extension)
+    </p>
+  </div>
+  <div
+    className="ui bottom attached segment"
+    style={
+      Object {
+        "alignSelf": "flex-end",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "marginBottom": 8,
+          "marginTop": 8,
+          "textAlign": "center",
+        }
+      }
+    >
+      This project was bootstrapped with 
+      <a
+        href="https://github.com/facebookincubator/create-react-app"
+      >
+        Create React App
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Pages No Match 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": 16,
+      "marginRight": 16,
+    }
+  }
+>
+  <div
+    className="ui negative message"
+  >
+    <div
+      className="header"
+    >
+      We're sorry, we don't know "
+      /pathName
+      "
+    </div>
+    <p>
+      Did you misspelled the web address?
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Pages Todo List 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "column",
+      "justifyContent": "center",
+    }
+  }
+>
+  <form
+    action={undefined}
+    className="ui form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field"
+    >
+      <div
+        className="ui input"
+        content={undefined}
+      >
+        <input
+          disabled={undefined}
+          name="textBox"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Type me!"
+          required={undefined}
+          tabIndex={undefined}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="field"
+    >
+      <button
+        className="ui right floated button"
+        disabled={undefined}
+        onClick={[Function]}
+        required={undefined}
+        role="button"
+        tabIndex={undefined}
+        type={undefined}
+      >
+        ADD
+      </button>
+    </div>
+  </form>
+  <h4>
+    OR
+  </h4>
+  <button
+    className="ui button"
+    disabled={undefined}
+    onClick={[Function]}
+    role="button"
+    tabIndex={undefined}
+  >
+    Fetch Todo using GET
+  </button>
+  <br />
+  <h2>
+    Todo
+  </h2>
+  <div
+    className="ui divided list"
+    role="list"
+  >
+    <div
+      className="item"
+      data-value={undefined}
+      onClick={[Function]}
+      role="listitem"
+    >
+      <div
+        className="left floated content"
+      >
+        <div
+          className="header"
+        >
+          Todo from initial reducer state.
+        </div>
+        <div
+          className="description"
+        >
+          5/8/2016
+           - 
+          12:02:12 PM
+        </div>
+      </div>
+      <div
+        className="right floated content"
+      >
+        <button
+          className="ui icon button"
+          disabled={undefined}
+          onClick={[Function]}
+          role="button"
+          tabIndex={undefined}
+        >
+          <i
+            aria-hidden="true"
+            className="delete icon"
+          />
+        </button>
+      </div>
+      <div
+        className="right floated content"
+      >
+        <button
+          className="ui icon button"
+          disabled={undefined}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="button"
+          tabIndex={undefined}
+        >
+          <i
+            aria-hidden="true"
+            className="edit icon"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
