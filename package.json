@@ -17,6 +17,10 @@
     "semantic-ui-react": "^0.75.0"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.2.13",
+    "@storybook/addon-centered": "^3.2.13",
+    "@storybook/addon-links": "^3.2.13",
+    "@storybook/react": "^3.2.13",
     "enzyme": "^3.1.0",
     "gh-pages": "^1.0.0",
     "pre-commit": "^1.2.2",
@@ -35,7 +39,9 @@
     "lint-fix": "./node_modules/.bin/standard --fix",
     "precommit-msg": "echo '\nPre-commit -> Linting with Standard.js \nUse \"--no-verify\" to force commit\n' && exit 0",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "pre-commit": [
     "precommit-msg",

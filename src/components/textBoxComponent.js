@@ -8,8 +8,13 @@ import { Form } from 'semantic-ui-react'
 const renderFormInput = (field) => <Form.Input {...field.input} placeholder={field.placeholder} />
 
 const textBox = (props) => {
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    props.onSubmit()
+  }
+
   return (
-    <Form onSubmit={props.onSubmit}>
+    <Form onSubmit={handleSubmit}>
       <Field name='textBox' component={renderFormInput} placeholder={props.placeholder || 'Type me!'} />
       <Form.Button content={props.content || 'Submit'} floated={props.float || 'right'} />
     </Form>

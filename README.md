@@ -31,6 +31,8 @@ To work with an empty boilerplate, rename ```src-new``` to ```src```.
 
 - **axios**
 
+**Testing**
+
 - **jest && enzyme**
 
 > This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
