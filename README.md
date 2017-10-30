@@ -11,24 +11,26 @@ To work with an empty boilerplate, rename ```src-new``` to ```src```.
 
 **Libraries**
 
-1. **redux-devtools-extension**: Show dispatch actions and allow time travel.
+- **redux-devtools-extension**
 
-2. **redux-immutable-state-invariant**: Throws error when trying to mutate redux state.
+- **redux-immutable-state-invariant**: Throws error when trying to mutate redux state.
 
-3. **standard && precommit**: Enforce standardJS (Standard Style) check when run ```git commit``` and ```git push```.
+- **precommit**
 
-4. **semantic-ui-react**: An UI framework based on ```semantic-ui``` with modification to supports React.
+- **standard**
 
-5. **redux-form**: Auto-dispatch action to auto-created reducer (and many more) for form components. See ```textAreaComponent.js``` for working example with ```semantic-ui-react```.
+- **semantic-ui-react**
 
-6. **react-router-redux**: Dispatch action for navigation and keep redux state sync with router.
+- **redux-form**
 
-7. **redux-saga**: Middleware for redux that provides [side effects](http://redux.js.org/docs/faq/Actions.html#actions-side-effects).
+- **react-router-redux**
 
-8. **redux-thunk**: Another middleware for redux.
+- **redux-saga**
 
-9. **axios**: A promise-based HTTP client use for making server requests.
+- **redux-thunk**
 
-10. **jest && enzyme**: For react unit testing. Create file ```name.test.js``` and use ```yarn test``` to run all tests.
+- **axios**
+
+- **jest && enzyme**
 
 > This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
