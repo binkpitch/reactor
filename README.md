@@ -1,3 +1,6 @@
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 ### A React boilerplate with Redux.
 
 Install with ```git clone https://github.com/binkpitch/reactor.git your-project-name && cd your-project-name && rm -rf .git && yarn install```. 
@@ -39,6 +42,8 @@ To work with an empty boilerplate, rename ```src-new``` to ```src```.
 - precommit
 
 - standardjs
+
+- commitizen
 
 **Testing**
 
