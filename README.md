@@ -9,32 +9,43 @@ To debug install chrome extension, [Redux DevTools](https://chrome.google.com/we
 
 To work with an empty boilerplate, rename ```src-new``` to ```src```.
 
-**Libraries**
+**Dependencies**
 
-- **redux-devtools-extension**
+- react
 
-- **redux-immutable-state-invariant**: Throws error when trying to mutate redux state.
+- redux
 
-- **precommit**
+- semantic-ui-react
 
-- **standard**
+- redux-form
 
-- **semantic-ui-react**
+- react-router-redux
 
-- **redux-form**
+- redux-saga
 
-- **react-router-redux**
+- redux-thunk
 
-- **redux-saga**
+- axios
 
-- **redux-thunk**
+**Debugging**
 
-- **axios**
+- redux-devtools-extension
+
+- redux-immutable-state-invariant: Throws error when trying to mutate redux state.
+
+
+**Standard**
+
+- precommit
+
+- standardjs
 
 **Testing**
 
-- **jest && enzyme**
+- jest
 
-- **storybook**
+- enzyme
+
+- storybook
 
 > This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
