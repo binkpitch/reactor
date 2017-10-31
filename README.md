@@ -12,6 +12,8 @@ To debug install chrome extension, [Redux DevTools](https://chrome.google.com/we
 
 To work with an empty boilerplate, rename ```src-new``` to ```src```.
 
+To commit use ```yarn run commit```.
+
 **Dependencies**
 
 - react
