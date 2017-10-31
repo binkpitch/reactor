@@ -42,6 +42,8 @@ To work with an empty boilerplate, rename ```src-new``` to ```src```.
 
 - standardjs
 
+- commitizen
+
 **Testing**
 
 - jest
