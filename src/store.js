@@ -9,7 +9,7 @@ import reduxImmutableStateInvariant from 'redux-immutable-state-invariant'
 
 // logger for redux with time travel https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
 // "/logOnlyInProduction" disable extension in production
-import { composeWithDevTools } from 'redux-devtools-extension/logOnlyInProduction'
+import { composeWithDevTools } from 'redux-devtools-extension'
 
 // for react-router-redux
 import createHistory from 'history/createBrowserHistory'

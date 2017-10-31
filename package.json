@@ -2,6 +2,7 @@
   "name": "reactor",
   "version": "1.4.0",
   "private": true,
+  "homepage": "https://binkpitch.github.io/reactor",  
   "dependencies": {
     "axios": "^0.17.0",
     "prop-types": "^15.6.0",
@@ -23,9 +24,10 @@
     "@storybook/addon-storyshots": "^3.2.13",
     "@storybook/react": "^3.2.13",
     "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.2",
     "gh-pages": "^1.0.0",
     "pre-commit": "^1.2.2",
-    "react-scripts": "1.0.14",
+    "react-scripts": "1.0.15",
     "react-test-renderer": "^16.0.0",
     "redux-devtools-extension": "^2.13.2",
     "redux-immutable-state-invariant": "^2.0.0",
@@ -49,5 +51,7 @@
     "lint",
     "test"
   ],
-  "homepage": "https://binkpitch.github.io/reactor"
+  "standard": {
+    "env": ["jest"]
+  }
 }
