@@ -23,6 +23,8 @@
     "@storybook/addon-links": "^3.2.13",
     "@storybook/addon-storyshots": "^3.2.13",
     "@storybook/react": "^3.2.13",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-16": "^1.0.2",
     "eslint-config-standard": "^10.2.1",
@@ -41,6 +43,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "commit": "git-cz",
     "test": "CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "./node_modules/.bin/standard",
@@ -60,5 +63,10 @@
     "env": [
       "jest"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
