@@ -1,5 +1,6 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Build Status](https://travis-ci.org/binkpitch/reactor.svg?branch=master)](https://travis-ci.org/binkpitch/reactor)
 
 ### A very simple React boilerplate with Redux.
 
