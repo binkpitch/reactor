@@ -6,8 +6,7 @@ import List from '../components/listComponent'
 import TextBox from '../components/textBoxComponent'
 
 const TodoList = (props) => {
-  const handleAddTodo = (event) => {
-    event.preventDefault()
+  const handleAddTodo = () => {
     const date = new Date().toLocaleDateString()
     const time = new Date().toLocaleTimeString()
     props.addTodoForm.values
