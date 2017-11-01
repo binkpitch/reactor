@@ -8,9 +8,11 @@ cache:
 script:
   - yarn run lint
   - yarn run test
+  - yarn run build
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   on:
     branch: master
+  local_dir: build
