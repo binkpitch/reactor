@@ -11,8 +11,8 @@ const TodoList = (props) => {
     const date = new Date().toLocaleDateString()
     const time = new Date().toLocaleTimeString()
     props.addTodoForm.values
-    ? props.addTodo(props.addTodoForm.values.textBox, date, time)
-    : props.addTodo('')
+      ? props.addTodo(props.addTodoForm.values.textBox, date, time)
+      : props.addTodo('')
   }
 
   const handleEditTodo = (id, text) => {
